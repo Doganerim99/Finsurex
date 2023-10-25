@@ -1,0 +1,91 @@
+type: object
+properties:
+  ENTEGRASYON_PARTAJ_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_ID:
+    type: number
+    format: double
+    nullable: true
+  MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  SISTEM_KULLANICI_KOD:
+    type: string
+    nullable: true
+  PARTAJ_KOD:
+    type: string
+    nullable: true
+  PARTAJ_AD:
+    type: string
+    nullable: true
+  ALT_PARTAJ_KOD:
+    type: string
+    nullable: true
+  ALT_PARTAJ_AD:
+    type: string
+    nullable: true
+  KULLANICI:
+    type: string
+    nullable: true
+  SIFRE:
+    type: string
+    nullable: true
+  VARSAYILAN:
+    type: string
+    nullable: true
+  SIFRE_DEGISTIRILEBILIR:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  SECIM:
+    type: boolean
+  SIGORTA_SIRKET_AD:
+    type: string
+    nullable: true
+  ENTEGRASYON_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_AD:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_AD:
+    type: string
+    nullable: true
+  BAGLI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  BAGLI_ROL_AD:
+    type: string
+    nullable: true
+  SISTEM_KULLANICI_AD:
+    type: string
+    nullable: true
+  CALISAN_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  CALISAN_ROL_AD:
+    type: string
+    nullable: true
+  GIZLI:
+    type: string
+    nullable: true
+additionalProperties: false

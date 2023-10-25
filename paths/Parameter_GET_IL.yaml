@@ -1,0 +1,6 @@
+get:
+  tags:
+    - Parameter
+  responses:
+    '200':
+      description: Success

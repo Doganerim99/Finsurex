@@ -1,0 +1,6 @@
+get:
+  tags:
+    - SmartMessage
+  responses:
+    '200':
+      description: Success

@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_POLICE_ONAY.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_POLICE_ONAY.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_POLICE_ONAY.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_POLICE_ONAY.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_POLICE_ONAY.yaml
+  responses:
+    '200':
+      description: Success

@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Parameter
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\TYX_ADRES_IL.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\TYX_ADRES_IL.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\TYX_ADRES_IL.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\TYX_ADRES_IL.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\TYX_ADRES_IL.yaml
+  responses:
+    '200':
+      description: Success

@@ -1,0 +1,87 @@
+type: object
+properties:
+  SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_TIP_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_KOD:
+    type: string
+    nullable: true
+  SORU_AD:
+    type: string
+    nullable: true
+  MASKE_TIP_ID:
+    type: number
+    format: double
+    nullable: true
+  SIRALAMA_TIP:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  DEGISIM_SAYISI:
+    type: number
+    format: double
+    nullable: true
+  DEGER_KOD:
+    type: string
+    nullable: true
+  DEGER_AD:
+    type: string
+    nullable: true
+  TABLOSU_VAR:
+    type: number
+    format: double
+    nullable: true
+  SIRA_NO:
+    type: number
+    format: double
+    nullable: true
+  ZORUNLU:
+    type: string
+    nullable: true
+  GIZLI:
+    type: string
+    nullable: true
+  URUN_SORU_EVENT:
+    type: string
+    nullable: true
+  KONTROL_GRUP_ID:
+    type: number
+    format: double
+    nullable: true
+  KONTROL_GRUP_AD:
+    type: string
+    nullable: true
+  KONTROL_GRUP_MESAJ:
+    type: string
+    nullable: true
+  DIZAYN_GRUP:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_ID_LIST:
+    type: string
+    nullable: true
+  SGR_SIRKET_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_DEGER_LIST:
+    type: array
+    items:
+      $ref: .\M_SORU_DEGER.yaml
+    nullable: true
+additionalProperties: false

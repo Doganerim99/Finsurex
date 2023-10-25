@@ -1,0 +1,19 @@
+type: object
+properties:
+  SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_KOD:
+    type: string
+    nullable: true
+  SORU_AD:
+    type: string
+    nullable: true
+  DEGER_KOD:
+    type: string
+    nullable: true
+  DEGER_AD:
+    type: string
+    nullable: true
+additionalProperties: false

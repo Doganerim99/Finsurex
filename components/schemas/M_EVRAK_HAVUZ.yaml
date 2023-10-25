@@ -1,0 +1,32 @@
+type: object
+properties:
+  EVRAK_HAVUZ_ID:
+    type: number
+    format: double
+    nullable: true
+  KEY_ID:
+    type: string
+    nullable: true
+  EVRAK_TIP_ID:
+    type: number
+    format: double
+    nullable: true
+  EVRAK_PATH:
+    type: string
+    nullable: true
+  ORJ_FILE_NAME:
+    type: string
+    nullable: true
+  MODUL:
+    type: string
+    nullable: true
+  AKTIF_MI:
+    type: string
+    nullable: true
+  EVRAK_BINARY:
+    type: string
+    nullable: true
+  UZANTI:
+    type: string
+    nullable: true
+additionalProperties: false

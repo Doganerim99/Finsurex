@@ -1,0 +1,48 @@
+type: object
+properties:
+  URUN_SORU_TABLO_ID:
+    type: number
+    format: double
+    nullable: true
+  URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  TABLO_KOD:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  SORU_KOD:
+    type: string
+    nullable: true
+  SORU_KOD_KEY:
+    type: string
+    nullable: true
+  SORU_ID_KEY:
+    type: string
+    nullable: true
+  DEGER_KOD_KEY:
+    type: string
+    nullable: true
+  DEGER_ID_KEY:
+    type: string
+    nullable: true
+  ARA_DEGER_VAR:
+    type: number
+    format: double
+    nullable: true
+additionalProperties: false

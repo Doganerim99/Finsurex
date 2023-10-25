@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\TYX_URUN.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\TYX_URUN.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\TYX_URUN.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\TYX_URUN.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\TYX_URUN.yaml
+  responses:
+    '200':
+      description: Success

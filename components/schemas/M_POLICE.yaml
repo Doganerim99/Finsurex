@@ -1,0 +1,111 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  POLICE_ID:
+    type: number
+    format: double
+    nullable: true
+  POLICE_GUID:
+    type: string
+    nullable: true
+  POLICE_PARTAJ_GUID:
+    type: string
+    nullable: true
+  SGR_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SGR_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  SGE_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SGE_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  MT_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  MT_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  TP_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  TP_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  IS_ATAMA:
+    $ref: .\M_IS_ATAMA.yaml
+  KIMLIK_BILGI:
+    $ref: .\M_KIMLIK_BILGI.yaml
+  URUN_LIST:
+    type: array
+    items:
+      $ref: .\M_URUN.yaml
+    nullable: true
+  SORU_LIST:
+    type: array
+    items:
+      $ref: .\M_SORU.yaml
+    nullable: true
+  URUN_SORU_EVENT_LIST:
+    type: array
+    items:
+      $ref: .\M_URUN_SORU_EVENT.yaml
+    nullable: true
+  SORU_MASKE_LIST:
+    type: array
+    items:
+      $ref: .\M_SORU_MASKE.yaml
+    nullable: true
+  SORU_TABLO_LIST:
+    type: array
+    items:
+      $ref: .\M_URUN_SORU_TABLO.yaml
+    nullable: true
+  ENTEGRASYON_POLICE:
+    type: array
+    items:
+      $ref: .\M_ENTEGRASYON_POLICE.yaml
+    nullable: true
+  ENTEGRASYON_PARTAJ:
+    type: array
+    items:
+      $ref: .\M_ENTEGRASYON_PARTAJ.yaml
+    nullable: true
+  BAGLI_MUSTERI:
+    type: array
+    items:
+      $ref: .\M_BAGLI_MUSTERI.yaml
+    nullable: true
+  MASKED_SORU_LIST:
+    type: array
+    items:
+      $ref: .\M_SORU_MASKED.yaml
+    nullable: true
+  is_mobile:
+    type: boolean
+  IS_OTO_TEKLIF:
+    type: boolean
+additionalProperties: false

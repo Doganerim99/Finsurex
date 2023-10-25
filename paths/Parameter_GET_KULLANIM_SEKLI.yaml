@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Parameter
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\TYX_SORU_DEGER.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\TYX_SORU_DEGER.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\TYX_SORU_DEGER.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\TYX_SORU_DEGER.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\TYX_SORU_DEGER.yaml
+  responses:
+    '200':
+      description: Success

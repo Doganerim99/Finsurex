@@ -1,0 +1,45 @@
+type: object
+properties:
+  PLAKA_NO:
+    type: string
+    nullable: true
+  BELGE_SERI_NO:
+    type: string
+    nullable: true
+  MODEL_YIL:
+    type: string
+    nullable: true
+  MARKA:
+    type: string
+    nullable: true
+  MARKA_TIP:
+    type: string
+    nullable: true
+  MOTOR_NO:
+    type: string
+    nullable: true
+  SASI_NO:
+    type: string
+    nullable: true
+  KULLANIM_TIP:
+    type: string
+    nullable: true
+  KULLANIM_SEKLI:
+    type: string
+    nullable: true
+  KULLANIM_TARZ:
+    type: string
+    nullable: true
+  YAKIT_TIP:
+    type: string
+    nullable: true
+  TRAFIGE_CIKIS_TARIH:
+    type: string
+    nullable: true
+  TRAFIK_TESCIL_TARIH:
+    type: string
+    nullable: true
+  YOLCU_YER_ADET:
+    type: string
+    nullable: true
+additionalProperties: false

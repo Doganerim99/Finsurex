@@ -1,0 +1,79 @@
+type: object
+properties:
+  ENTEGRASYON_POLICE_MUSTERI_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  TCKN:
+    type: string
+    nullable: true
+  VKN:
+    type: string
+    nullable: true
+  PASAPORT:
+    type: string
+    nullable: true
+  AD:
+    type: string
+    nullable: true
+  SOYAD:
+    type: string
+    nullable: true
+  ADRES:
+    type: string
+    nullable: true
+  TELEFON:
+    type: string
+    nullable: true
+  BABA_ADI:
+    type: string
+    nullable: true
+  ANNE_ADI:
+    type: string
+    nullable: true
+  DOGUM_YERI:
+    type: string
+    nullable: true
+  DOGUM_TARIHI:
+    type: string
+    format: date-time
+    nullable: true
+  EMAIL:
+    type: string
+    nullable: true
+  MESLEK:
+    type: string
+    nullable: true
+  CINSIYET:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  ROL_AD:
+    type: string
+    nullable: true
+  SF:
+    type: string
+    nullable: true
+additionalProperties: false

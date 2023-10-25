@@ -1,0 +1,40 @@
+type: object
+properties:
+  MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  TCK_NO:
+    type: number
+    format: double
+    nullable: true
+  AD:
+    type: string
+    nullable: true
+  SOYAD:
+    type: string
+    nullable: true
+  DOGUM_TARIH:
+    type: string
+    format: date-time
+  ILISKI_TIP:
+    type: number
+    format: double
+    nullable: true
+  ILISKI_TIP_AD:
+    type: string
+    nullable: true
+  PLAN:
+    type: number
+    format: double
+    nullable: true
+  PLAN_AD:
+    type: string
+    nullable: true
+  CINSIYET:
+    type: string
+    nullable: true
+  CINSIYET_AD:
+    type: string
+    nullable: true
+additionalProperties: false

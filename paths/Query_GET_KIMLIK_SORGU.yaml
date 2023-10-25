@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Query
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\QUERY_KIMLIK_SORGU_REQUEST.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\QUERY_KIMLIK_SORGU_REQUEST.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\QUERY_KIMLIK_SORGU_REQUEST.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\QUERY_KIMLIK_SORGU_REQUEST.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\QUERY_KIMLIK_SORGU_REQUEST.yaml
+  responses:
+    '200':
+      description: Success

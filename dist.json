@@ -1,0 +1,5272 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BrokerExp.Web.API.External",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "/Acentex.WebApi.External.Live"
+    }
+  ],
+  "paths": {
+    "/Auth/GetToken": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Auth/RefreshToken": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_URUN": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_URUN"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_URUN"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_URUN"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_URUN"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_URUN"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_PROPOSAL": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_PROPOSAL"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_PROPOSAL"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_PROPOSAL"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_PROPOSAL"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_PROPOSAL"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/SET_TEKLIF_GUID": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/SET_TEKLIF_URUN": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRATIONS": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/CHECK_INSURED_COMPANY": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POST_POLICY_MAIN_INFO": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POST_POLICY_QUESTION": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POST_POLICY_QUESTION_ANSWER": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_POLICE": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_OLD_POLICE": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_POLICY_DOCUMENT": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_POLICE_MUSTERI": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_POLICE_TEMINAT": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_POLICE_SORU": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_TEKLIFLER_PDF": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POLICY_APPROVAL": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POLICY_APPROVAL_FROM_IVR": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/POLICY_APPROVAL_AFTER_SECURE_PAYMENT": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_PAYMENT_DOCUMENT": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE": {
+      "post": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExternalProduction/GET_CUSTOMER_INFO_BY_PHONE": {
+      "get": {
+        "tags": [
+          "ExternalProduction"
+        ],
+        "parameters": [
+          {
+            "name": "phoneNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/IYS/IYSBildirim": {
+      "post": {
+        "tags": [
+          "IYS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsRequest"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/IYS/IYSSorgulama": {
+      "post": {
+        "tags": [
+          "IYS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsStatusRequest"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsStatusRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsStatusRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsStatusRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentsStatusRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/IYS/IYSDegisiklikler": {
+      "get": {
+        "tags": [
+          "IYS"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_IL": {
+      "get": {
+        "tags": [
+          "Parameter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_ILCE": {
+      "post": {
+        "tags": [
+          "Parameter"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ADRES_IL"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ADRES_IL"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ADRES_IL"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ADRES_IL"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_ADRES_IL"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_MARKA": {
+      "post": {
+        "tags": [
+          "Parameter"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_MARKA_MODEL": {
+      "post": {
+        "tags": [
+          "Parameter"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/M_ARAC_BILGI"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_KULLANIM_TIP": {
+      "get": {
+        "tags": [
+          "Parameter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_KULLANIM_SEKLI": {
+      "post": {
+        "tags": [
+          "Parameter"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_ARAC_YAKIT_TIP": {
+      "get": {
+        "tags": [
+          "Parameter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_SBM_KULLANIM_TARZ": {
+      "get": {
+        "tags": [
+          "Parameter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Parameter/GET_SBM_KULLANIM_SEKLI": {
+      "get": {
+        "tags": [
+          "Parameter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Query/GET_KIMLIK_SORGU": {
+      "post": {
+        "tags": [
+          "Query"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Query/GET_TRAMER_SORGU": {
+      "post": {
+        "tags": [
+          "Query"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Query/GET_EGM_SORGU": {
+      "post": {
+        "tags": [
+          "Query"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/SmartMessage/PermissionHistory": {
+      "get": {
+        "tags": [
+          "SmartMessage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Token/GetToken": {
+      "post": {
+        "tags": [
+          "Token"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Token/RefreshToken": {
+      "post": {
+        "tags": [
+          "Token"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Token/ValidateToken": {
+      "post": {
+        "tags": [
+          "Token"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/html": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "consentsRequest": {
+        "type": "object",
+        "properties": {
+          "consentDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "source": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipient": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientType": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "consentsStatusRequest": {
+        "type": "object",
+        "properties": {
+          "recipient": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientType": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_ARAC_BILGI": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MARKA_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_TIP_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_TIP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MODEL_YIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAKA_IL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "FULL_PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "SASI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "MOTOR_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "RENK": {
+            "type": "string",
+            "nullable": true
+          },
+          "YOLCU_YER_ADET": {
+            "type": "string",
+            "nullable": true
+          },
+          "MOTOR_GUCU": {
+            "type": "string",
+            "nullable": true
+          },
+          "SILINDIR_HACMI": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_SEKLI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_SEKLI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_TARZI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_TARZI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TESCIL_BELGE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TESCIL_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIGE_CIKIS_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_SIGORTA_SIRKET_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_POLICE_BASLAMA_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "KASKO_ESKI_POLICE_BITIS_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_SIGORTA_SIRKET_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_POLICE_BASLAMA_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_ESKI_POLICE_BITIS_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "KAYNAK": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_BAGLI_MUSTERI": {
+        "type": "object",
+        "properties": {
+          "MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TCK_NO": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SOYAD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIH": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ILISKI_TIP": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ILISKI_TIP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAN": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "PLAN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "CINSIYET": {
+            "type": "string",
+            "nullable": true
+          },
+          "CINSIYET_AD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_ENTEGRASYON_PARTAJ": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_PARTAJ_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SISTEM_KULLANICI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "PARTAJ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "PARTAJ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ALT_PARTAJ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ALT_PARTAJ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANICI": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIFRE": {
+            "type": "string",
+            "nullable": true
+          },
+          "VARSAYILAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIFRE_DEGISTIRILEBILIR": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SECIM": {
+            "type": "boolean"
+          },
+          "SIGORTA_SIRKET_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "BAGLI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "BAGLI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SISTEM_KULLANICI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "CALISAN_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "CALISAN_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GIZLI": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_ENTEGRASYON_POLICE": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SON_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "POLICE_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ONLINE": {
+            "type": "string",
+            "nullable": true
+          },
+          "ESKI_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TAHSILAT_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SECIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "IS_ATAMA_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGE_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGE_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_LOG_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "REVIZE_NO": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_ZEYL_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_DURUM_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_DURUM_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TALI_ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ZEYL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ZEYL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "T_I": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_SON_DURUM": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT": {
+            "type": "string",
+            "nullable": true
+          },
+          "TOPLAM_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_PRIM_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_NET_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_NET_PRIM_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_VERGI": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_VERGI_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_KOMISYON": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_KOMISYON_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DOVIZ_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DOVIZ_KUR": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DOVIZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOVIZ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DURUM_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_PARTAJ_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAKSIT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "BASLAMA_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "BITIS_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TANZIM_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ESKI_SGR_SIRKET_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ESKI_SGR_SIRKET_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ESKI_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_IS_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "SECURE_PAYMENT_REF_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLCBRT_ISLEM_REFERANS_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "PLCKOM_ISLEM_REFERANS_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ALT_GRUP_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ALT_GRUP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEKLIF_GECERLILIK_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TEKLIF_GECERLILIK_SURE": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "HATA_GRUP": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_ENTEGRASYON_POLICE_MUSTERI": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_POLICE_MUSTERI_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TCKN": {
+            "type": "string",
+            "nullable": true
+          },
+          "VKN": {
+            "type": "string",
+            "nullable": true
+          },
+          "PASAPORT": {
+            "type": "string",
+            "nullable": true
+          },
+          "AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SOYAD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ADRES": {
+            "type": "string",
+            "nullable": true
+          },
+          "TELEFON": {
+            "type": "string",
+            "nullable": true
+          },
+          "BABA_ADI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ANNE_ADI": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_YERI": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIHI": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "MESLEK": {
+            "type": "string",
+            "nullable": true
+          },
+          "CINSIYET": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SF": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_ENTEGRASYON_URUN_TAKSIT": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_TAKSIT_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_TAKSIT_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_TAKSIT_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_AD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_EVRAK_HAVUZ": {
+        "type": "object",
+        "properties": {
+          "EVRAK_HAVUZ_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "KEY_ID": {
+            "type": "string",
+            "nullable": true
+          },
+          "EVRAK_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "EVRAK_PATH": {
+            "type": "string",
+            "nullable": true
+          },
+          "ORJ_FILE_NAME": {
+            "type": "string",
+            "nullable": true
+          },
+          "MODUL": {
+            "type": "string",
+            "nullable": true
+          },
+          "AKTIF_MI": {
+            "type": "string",
+            "nullable": true
+          },
+          "EVRAK_BINARY": {
+            "type": "string",
+            "nullable": true
+          },
+          "UZANTI": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_EVRAK_HAVUZ_LIST": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "Items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_EVRAK_HAVUZ"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_IS_ATAMA": {
+        "type": "object",
+        "properties": {
+          "IS_ATAMA_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "IS_ATAMA_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KAYIT_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "GELECEK_DONEM_AKTAR": {
+            "type": "string",
+            "nullable": true
+          },
+          "ATANAN_KULLANICI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ATAMA_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "AKTIF_PASIF": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAKIP_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "REFERANS_GRUP": {
+            "type": "string",
+            "nullable": true
+          },
+          "BRANS_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TC_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "VERGI_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "AD_SOYAD_UNVAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIHI": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "CEP_TEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "CEP_TEL_1": {
+            "type": "string",
+            "nullable": true
+          },
+          "CEP_TEL_2": {
+            "type": "string",
+            "nullable": true
+          },
+          "CEP_TEL_3": {
+            "type": "string",
+            "nullable": true
+          },
+          "SABIT_TEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "SABIT_TEL_1": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "IL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ILCE_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IS_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIGORTA_SIRKET_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIGORTA_SIRKET_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "BASLAMA_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "BITIS_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TANZIM_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "BASLAMA_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "BITIS_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TANZIM_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_TIP_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_TIP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MODEL_YIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_TARZI": {
+            "type": "string",
+            "nullable": true
+          },
+          "MOTOR_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "SASI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "BELGE_SERI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENGELLI_ARACI_MI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ARAC_YAKIT_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "RIZIKO_UAVT_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_METREKARE": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_INSAA_YIL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_INSAA_YIL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_KAT_SAYI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_KAT_SAYI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_YAPI_TARZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_BINA_YAPI_TARZ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_HASARSIZLIK_DURUM_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_HASARSIZLIK_DURUM_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_DAIRE_KAT_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_DAIRE_KULLANIM_SEKLI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_DAIRE_KULLANIM_SEKLI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_ADA": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_PAFTA": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_PARSEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_SAYFA": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_ESKI_SGR_SIRKET_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_ESKI_SGR_SIRKET_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_ESKI_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_ESKI_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_METREKARE": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_INSAA_YIL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_INSAA_YIL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_KAT_SAYI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_KAT_SAYI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_YAPI_TARZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_YAPI_TARZ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_HASARSIZLIK_DURUM_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_HASARSIZLIK_DURUM_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KAT_NO_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KAT_NO_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KULLANIM_SEKLI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KULLANIM_SEKLI_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KULLANIM_TIP_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DAIRE_KULLANIM_TIP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_BINA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_ESYA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_CAM_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_ELEKTRONIK_CIHAZ_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_MAKINE_KIRILMASI_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DASK_SGR_SIRKET_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DASK_SGR_SIRKET_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DASK_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONUT_DASK_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_TEMINAT_LIMIT": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_KISI_VE_OLAY_BASI": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_CIRO": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_YILLIK_TOPLAM": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_GIDA_ZEHIRLENMESI_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_MANEVI_TAZMINAT_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "UMM_ASANSOR_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "FK_TEMINAT_LIMIT": {
+            "type": "string",
+            "nullable": true
+          },
+          "FK_KISI_SAYISI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_CALISAN_SAYISI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_TEMINAT_LIMIT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_CALISAN_ODENEN_YILLIK_BRUT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_KISI_BASI_BEDENI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_KAZA_BASI_BEDENI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_STAJER": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_TASERON": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_SERVIS_ARAC_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_GOREV_SEYAHAT_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_GIDA_ZEHIRLENMESI_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_MANEVI_TAZMINAT_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_YURTDISI_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "ISV_MESLEK_HASTALIK_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_BEHER_SEFER_MAX": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_SEFER_SAYISI": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_TEMINAT_ALAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_TASIMA_SEKLI": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMN_KISI_SAYISI": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMN_KISI_BASI_TEMINAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMN_KEFALET": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMN_LIMIT": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMN_TOPLAM_SIGORTA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_BINA_YAPI_TARZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_BINA_YAPI_TARZ_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_FAALIYET_KONUSU": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ENFLASYON_ENDEX": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_DOVIZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_BINA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_EMTEA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_FASON_EMTEA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_3SAHIS_EMTEA_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_DEKORASYON_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_DEMIRBAS_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_MAKINE_TESISAT_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_KASA_MUHTEVIYAT_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ELEKTRONIK_CIHAZ_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_HAREKETLI_ELEKTRONIK_CIHAZ_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_MAKINE_KIRILMASI_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_HAREKETLI_MAKINE_KIRILMASI_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_MALI_SORUMLULUK_LIMIT": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_CAM_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_TABELA_TOTEM_BEDEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_DIGER_BILGILER": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_METREKARE": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_SPRINKLER_TESISAT": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_YANGIN_DOLAP": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_YANGIN_TUP": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_YANGIN_ALARM": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_YANGIN_POMPA": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_YANGIN_SU_TANK": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_JENARATOR": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_DIGER": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_ONLEM_HIRSIZLIK": {
+            "type": "string",
+            "nullable": true
+          },
+          "YNG_DEPREM_MUAFIYET": {
+            "type": "string",
+            "nullable": true
+          },
+          "BOLGE_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "BOLGE_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "REFERANS_GRUP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ILCE_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SON_DURUM": {
+            "type": "string",
+            "nullable": true
+          },
+          "GOREVLI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ATANAN_KULLANICI": {
+            "type": "string",
+            "nullable": true
+          },
+          "ATAYAN_KULLANICI": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEVAM_DURUM": {
+            "type": "string",
+            "nullable": true
+          },
+          "OTO_TEKLIF_OLUSTUR": {
+            "type": "string",
+            "nullable": true
+          },
+          "CAPRAZ_IS_OLUSTUR": {
+            "type": "string",
+            "nullable": true
+          },
+          "STATU_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MUSTERI_STATU_TANIM_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MUSTERI_NOTLAR": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT_SISTEM_KULLANICI_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "EVRAK_HAVUZ_LIST": {
+            "$ref": "#/components/schemas/M_EVRAK_HAVUZ_LIST"
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_KIMLIK_BILGI": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "TC_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "VERGI_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SOYAD": {
+            "type": "string",
+            "nullable": true
+          },
+          "UNVAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "AD_SOYAD_UNVAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "BABA_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "CINSIYET": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIHI": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_YERI": {
+            "type": "string",
+            "nullable": true
+          },
+          "DASK_UAVT_ADRES_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "IL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ILCE_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MAHALLE_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ILCE_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "CEP_TEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "SABIT_TEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "ADRES": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIGORTALI_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MUSTERI_KARTON_KAYDET": {
+            "type": "boolean"
+          },
+          "MUSTERI_STATU_TANIM_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_KIMLIK_PLAKA_ARAC_SORGU": {
+        "type": "object",
+        "properties": {
+          "KIMLIK_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "BELGE_SERI_NO": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_POLICE": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "POLICE_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_PARTAJ_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGE_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGE_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IS_ATAMA": {
+            "$ref": "#/components/schemas/M_IS_ATAMA"
+          },
+          "KIMLIK_BILGI": {
+            "$ref": "#/components/schemas/M_KIMLIK_BILGI"
+          },
+          "URUN_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_URUN"
+            },
+            "nullable": true
+          },
+          "SORU_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_SORU"
+            },
+            "nullable": true
+          },
+          "URUN_SORU_EVENT_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_URUN_SORU_EVENT"
+            },
+            "nullable": true
+          },
+          "SORU_MASKE_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_SORU_MASKE"
+            },
+            "nullable": true
+          },
+          "SORU_TABLO_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_URUN_SORU_TABLO"
+            },
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+            },
+            "nullable": true
+          },
+          "ENTEGRASYON_PARTAJ": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_ENTEGRASYON_PARTAJ"
+            },
+            "nullable": true
+          },
+          "BAGLI_MUSTERI": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_BAGLI_MUSTERI"
+            },
+            "nullable": true
+          },
+          "MASKED_SORU_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_SORU_MASKED"
+            },
+            "nullable": true
+          },
+          "is_mobile": {
+            "type": "boolean"
+          },
+          "IS_OTO_TEKLIF": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_POLICE_BASIM_PARAM": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_ZEYL_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_DURUM_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "REQUEST_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "RESPONSE_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "SAVE_EVRAK_HAVUZ": {
+            "type": "boolean"
+          },
+          "AKTARIM_POLICE_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEKLIF_ONAY_RESPONSE_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEKLIF_HESAP_REQUEST_XML": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_POLICE_ONAY": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean"
+          },
+          "ErrorList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "WarningList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "MessageList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_GUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_ZEYL_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "REQUEST_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "RESPONSE_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEKLIF_HESAP_REQUEST_XML": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_AD_SOYAD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_SON_KULLANIM_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_GUVENLIK_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_TUR": {
+            "type": "string",
+            "nullable": true
+          },
+          "TC_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAKSIT_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAHSILAT_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ONLINE": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT": {
+            "type": "string",
+            "nullable": true
+          },
+          "HASH_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAKSIT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "IVR_CAGRI_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TOPLAM_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "CEP_TEL": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_POLICE_ONAY_IVR": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "KREDI_KART_AD_SOYAD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_SON_KULLANIM_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "KREDI_KART_GUVENLIK_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IVR_CAGRI_KEY": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_PROPOSAL": {
+        "type": "object",
+        "properties": {
+          "GENEL_BILGILER": {
+            "$ref": "#/components/schemas/M_PROPOSAL_GENEL"
+          },
+          "MUSTERI_BILGILERI": {
+            "$ref": "#/components/schemas/M_PROPOSAL_MUSTERI"
+          },
+          "ARAC_BILGILERI": {
+            "$ref": "#/components/schemas/M_PROPOSAL_ARAC"
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_PROPOSAL_ARAC": {
+        "type": "object",
+        "properties": {
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "BELGE_SERI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "MODEL_YIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA": {
+            "type": "string",
+            "nullable": true
+          },
+          "MARKA_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "MOTOR_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "SASI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_SEKLI": {
+            "type": "string",
+            "nullable": true
+          },
+          "KULLANIM_TARZ": {
+            "type": "string",
+            "nullable": true
+          },
+          "YAKIT_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIGE_CIKIS_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "TRAFIK_TESCIL_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "YOLCU_YER_ADET": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_PROPOSAL_GENEL": {
+        "type": "object",
+        "properties": {
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "BASLAMA_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "BITIS_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "TANZIM_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "ODEME_SEKLI": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_PROPOSAL_MUSTERI": {
+        "type": "object",
+        "properties": {
+          "TC_KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIH": {
+            "type": "string",
+            "nullable": true
+          },
+          "VERGI_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "AD_SOYAD_UNVAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "CEP_TEL": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "ADRES_IL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ADRES_ILCE_KOD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_SORU": {
+        "type": "object",
+        "properties": {
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MASKE_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SIRALAMA_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGISIM_SAYISI": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TABLOSU_VAR": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SIRA_NO": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ZORUNLU": {
+            "type": "string",
+            "nullable": true
+          },
+          "GIZLI": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_SORU_EVENT": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONTROL_GRUP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "KONTROL_GRUP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "KONTROL_GRUP_MESAJ": {
+            "type": "string",
+            "nullable": true
+          },
+          "DIZAYN_GRUP": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_URUN_ID_LIST": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_DEGER_LIST": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/M_SORU_DEGER"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_SORU_DEGER": {
+        "type": "object",
+        "properties": {
+          "SORU_DEGER_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MIN_DEGER": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MAX_DEGER": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEFAULT_DEGER": {
+            "type": "string",
+            "nullable": true
+          },
+          "REF_SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "REF_SORU_DEGER_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_SORU_MASKE": {
+        "type": "object",
+        "properties": {
+          "MASKE_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "OPTIONS": {
+            "type": "string",
+            "nullable": true
+          },
+          "MASKE_TIP_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLACEHOLDER": {
+            "type": "string",
+            "nullable": true
+          },
+          "MASKE_EVENT_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MASKE_EVENT_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "EVENT_NAME": {
+            "type": "string",
+            "nullable": true
+          },
+          "PARAMETERS": {
+            "type": "string",
+            "nullable": true
+          },
+          "SCRIPT_CODE": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_SORU_MASKED": {
+        "type": "object",
+        "properties": {
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_AD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_TEKLIF_PDF_PARAM": {
+        "type": "object",
+        "properties": {
+          "POLICE_ID": {
+            "type": "number",
+            "format": "double"
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_ID_LIST": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "format": "double"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_URUN": {
+        "type": "object",
+        "properties": {
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "VISIBLE": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_URUN_SORU_EVENT": {
+        "type": "object",
+        "properties": {
+          "URUN_SORU_EVENT_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_EVENT_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "EVENT_SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "EVENT_SORU_DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "CALISTI": {
+            "type": "boolean"
+          },
+          "URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_EVENT_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_EVENT_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "EVENT_SORU_AD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "M_URUN_SORU_TABLO": {
+        "type": "object",
+        "properties": {
+          "URUN_SORU_TABLO_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TABLO_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_KOD_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "SORU_ID_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_KOD_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_ID_KEY": {
+            "type": "string",
+            "nullable": true
+          },
+          "ARA_DEGER_VAR": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QUERY_EGM_SORGU_REQUEST": {
+        "type": "object",
+        "properties": {
+          "KIMLIK_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "BELGE_SERI_NO": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QUERY_KIMLIK_SORGU_REQUEST": {
+        "type": "object",
+        "properties": {
+          "KIMLIK_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOGUM_TARIH": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QUERY_TRAMER_SORGU_REQUEST": {
+        "type": "object",
+        "properties": {
+          "KIMLIK_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "KIMLIK_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLAKA_NO": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenModel": {
+        "type": "object",
+        "properties": {
+          "sessionGuid": {
+            "type": "string",
+            "nullable": true
+          },
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiration": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "expirationTimeStamp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "ErrorMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "Scheme": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenRequestModel": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_ADRES_IL": {
+        "type": "object",
+        "properties": {
+          "IL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ULKE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "IL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "IL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_ENTEGRASYON_POLICE_HAREKET": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_LOG_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "REVIZE_NO": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_ZEYL_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_YENILEME_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_DURUM_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "TALI_ACENTE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ZEYL_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ZEYL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "T_I": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_SON_DURUM": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TOPLAM_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_PRIM_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_NET_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_NET_PRIM_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_VERGI": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_VERGI_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_KOMISYON": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TOPLAM_KOMISYON_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DOVIZ_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DOVIZ_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOVIZ_KUR": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DURUM_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "BASLAMA_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "BITIS_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TANZIM_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TAHSILAT_TIP_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ONLINE": {
+            "type": "string",
+            "nullable": true
+          },
+          "TAKSIT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SGR_SIRKET_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MT_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TP_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "POLICE_IS_TIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "ESKI_SGR_SIRKET_MUSTERI_ROL_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ESKI_SGR_SIRKET_MUSTERI_ROL_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "ESKI_POLICE_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "SECURE_PAYMENT_REF_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "PLCBRT_ISLEM_REFERANS_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "PLCKOM_ISLEM_REFERANS_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "HATA_GRUP": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_ENTEGRASYON_POLICE_SORU": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_POLICE_SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_SORU_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_SORU_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "SIRKET_SORU_DEGER": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_ENTEGRASYON_POLICE_TEMINAT": {
+        "type": "object",
+        "properties": {
+          "ENTEGRASYON_POLICE_TEMINAT_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ENTEGRASYON_POLICE_HAREKET_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEMINAT_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEMINAT_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "TEMINAT_BEDEL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_BEDEL_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_PRIM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_PRIM_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_FIYAT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_KOMISYON": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_KOMISYON_TL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "TEMINAT_BASLAMA_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TEMINAT_BITIS_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "TEMINAT_LIMIT_ACIKLAMA": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_SORU_DEGER": {
+        "type": "object",
+        "properties": {
+          "SORU_DEGER_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEGER_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "DEGER_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "MIN_DEGER": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "MAX_DEGER": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "DEFAULT_DEGER": {
+            "type": "string",
+            "nullable": true
+          },
+          "REF_SORU_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "REF_SORU_DEGER_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TYX_URUN": {
+        "type": "object",
+        "properties": {
+          "URUN_ID": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "URUN_KOD": {
+            "type": "string",
+            "nullable": true
+          },
+          "URUN_AD": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEYEN": {
+            "type": "string",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "GUNCELLEME_TARIH_NUM": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+openapi: 3.0.1
+info:
+  title: BrokerExp.Web.API.External
+  version: v1
+servers:
+  - url: /Acentex.WebApi.External.Live
+paths:
+  /Auth/GetToken:
+    $ref: paths/Auth_GetToken.yaml
+  /Auth/RefreshToken:
+    $ref: paths/Auth_RefreshToken.yaml
+  /ExternalProduction/GET_URUN:
+    $ref: paths/ExternalProduction_GET_URUN.yaml
+  /ExternalProduction/GET_PROPOSAL:
+    $ref: paths/ExternalProduction_GET_PROPOSAL.yaml
+  /ExternalProduction/SET_TEKLIF_GUID:
+    $ref: paths/ExternalProduction_SET_TEKLIF_GUID.yaml
+  /ExternalProduction/SET_TEKLIF_URUN:
+    $ref: paths/ExternalProduction_SET_TEKLIF_URUN.yaml
+  /ExternalProduction/GET_ENTEGRATIONS:
+    $ref: paths/ExternalProduction_GET_ENTEGRATIONS.yaml
+  /ExternalProduction/CHECK_INSURED_COMPANY:
+    $ref: paths/ExternalProduction_CHECK_INSURED_COMPANY.yaml
+  /ExternalProduction/POST_POLICY_MAIN_INFO:
+    $ref: paths/ExternalProduction_POST_POLICY_MAIN_INFO.yaml
+  /ExternalProduction/POST_POLICY_QUESTION:
+    $ref: paths/ExternalProduction_POST_POLICY_QUESTION.yaml
+  /ExternalProduction/POST_POLICY_QUESTION_ANSWER:
+    $ref: paths/ExternalProduction_POST_POLICY_QUESTION_ANSWER.yaml
+  /ExternalProduction/GET_ENTEGRASYON_POLICE:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_POLICE.yaml
+  /ExternalProduction/GET_ENTEGRASYON_OLD_POLICE:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_OLD_POLICE.yaml
+  /ExternalProduction/GET_POLICY_DOCUMENT:
+    $ref: paths/ExternalProduction_GET_POLICY_DOCUMENT.yaml
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_MUSTERI:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_POLICE_MUSTERI.yaml
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_TEMINAT:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_POLICE_TEMINAT.yaml
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_SORU:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_POLICE_SORU.yaml
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE.yaml
+  /ExternalProduction/GET_TEKLIFLER_PDF:
+    $ref: paths/ExternalProduction_GET_TEKLIFLER_PDF.yaml
+  /ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID:
+    $ref: >-
+      paths/ExternalProduction_GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID.yaml
+  /ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT:
+    $ref: paths/ExternalProduction_GET_ENTEGRASYON_URUN_TAKSIT.yaml
+  /ExternalProduction/POLICY_APPROVAL:
+    $ref: paths/ExternalProduction_POLICY_APPROVAL.yaml
+  /ExternalProduction/POLICY_APPROVAL_FROM_IVR:
+    $ref: paths/ExternalProduction_POLICY_APPROVAL_FROM_IVR.yaml
+  /ExternalProduction/POLICY_APPROVAL_AFTER_SECURE_PAYMENT:
+    $ref: paths/ExternalProduction_POLICY_APPROVAL_AFTER_SECURE_PAYMENT.yaml
+  /ExternalProduction/GET_PAYMENT_DOCUMENT:
+    $ref: paths/ExternalProduction_GET_PAYMENT_DOCUMENT.yaml
+  /ExternalProduction/GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE:
+    $ref: paths/ExternalProduction_GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE.yaml
+  /ExternalProduction/GET_CUSTOMER_INFO_BY_PHONE:
+    $ref: paths/ExternalProduction_GET_CUSTOMER_INFO_BY_PHONE.yaml
+  /IYS/IYSBildirim:
+    $ref: paths/IYS_IYSBildirim.yaml
+  /IYS/IYSSorgulama:
+    $ref: paths/IYS_IYSSorgulama.yaml
+  /IYS/IYSDegisiklikler:
+    $ref: paths/IYS_IYSDegisiklikler.yaml
+  /Parameter/GET_IL:
+    $ref: paths/Parameter_GET_IL.yaml
+  /Parameter/GET_ILCE:
+    $ref: paths/Parameter_GET_ILCE.yaml
+  /Parameter/GET_MARKA:
+    $ref: paths/Parameter_GET_MARKA.yaml
+  /Parameter/GET_MARKA_MODEL:
+    $ref: paths/Parameter_GET_MARKA_MODEL.yaml
+  /Parameter/GET_KULLANIM_TIP:
+    $ref: paths/Parameter_GET_KULLANIM_TIP.yaml
+  /Parameter/GET_KULLANIM_SEKLI:
+    $ref: paths/Parameter_GET_KULLANIM_SEKLI.yaml
+  /Parameter/GET_ARAC_YAKIT_TIP:
+    $ref: paths/Parameter_GET_ARAC_YAKIT_TIP.yaml
+  /Parameter/GET_SBM_KULLANIM_TARZ:
+    $ref: paths/Parameter_GET_SBM_KULLANIM_TARZ.yaml
+  /Parameter/GET_SBM_KULLANIM_SEKLI:
+    $ref: paths/Parameter_GET_SBM_KULLANIM_SEKLI.yaml
+  /Query/GET_KIMLIK_SORGU:
+    $ref: paths/Query_GET_KIMLIK_SORGU.yaml
+  /Query/GET_TRAMER_SORGU:
+    $ref: paths/Query_GET_TRAMER_SORGU.yaml
+  /Query/GET_EGM_SORGU:
+    $ref: paths/Query_GET_EGM_SORGU.yaml
+  /SmartMessage/PermissionHistory:
+    $ref: paths/SmartMessage_PermissionHistory.yaml
+  /Token/GetToken:
+    $ref: paths/Token_GetToken.yaml
+  /Token/RefreshToken:
+    $ref: paths/Token_RefreshToken.yaml
+  /Token/ValidateToken:
+    $ref: paths/Token_ValidateToken.yaml

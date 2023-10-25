@@ -1,0 +1,210 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+openapi/openapi.yaml:
+  info-license:
+    - '#/info'
+  operation-operationId:
+    - '#/paths/~1Auth~1GetToken/post/operationId'
+    - '#/paths/~1Auth~1RefreshToken/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_URUN/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_PROPOSAL/post/operationId'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_GUID/post/operationId'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_URUN/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRATIONS/post/operationId'
+    - '#/paths/~1ExternalProduction~1CHECK_INSURED_COMPANY/post/operationId'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_MAIN_INFO/post/operationId'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION/post/operationId'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION_ANSWER/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_OLD_POLICE/post/operationId'
+    - '#/paths/~1ExternalProduction~1GET_POLICY_DOCUMENT/post/operationId'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_MUSTERI/post/operationId
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_TEMINAT/post/operationId
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_SORU/post/operationId'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE/post/operationId
+    - '#/paths/~1ExternalProduction~1GET_TEKLIFLER_PDF/post/operationId'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID/post/operationId
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT/post/operationId'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL/post/operationId'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL_FROM_IVR/post/operationId'
+    - >-
+      #/paths/~1ExternalProduction~1POLICY_APPROVAL_AFTER_SECURE_PAYMENT/post/operationId
+    - '#/paths/~1ExternalProduction~1GET_PAYMENT_DOCUMENT/post/operationId'
+    - >-
+      #/paths/~1ExternalProduction~1GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE/post/operationId
+    - '#/paths/~1ExternalProduction~1GET_CUSTOMER_INFO_BY_PHONE/get/operationId'
+    - '#/paths/~1IYS~1IYSBildirim/post/operationId'
+    - '#/paths/~1IYS~1IYSSorgulama/post/operationId'
+    - '#/paths/~1IYS~1IYSDegisiklikler/get/operationId'
+    - '#/paths/~1Parameter~1GET_IL/get/operationId'
+    - '#/paths/~1Parameter~1GET_ILCE/post/operationId'
+    - '#/paths/~1Parameter~1GET_MARKA/post/operationId'
+    - '#/paths/~1Parameter~1GET_MARKA_MODEL/post/operationId'
+    - '#/paths/~1Parameter~1GET_KULLANIM_TIP/get/operationId'
+    - '#/paths/~1Parameter~1GET_KULLANIM_SEKLI/post/operationId'
+    - '#/paths/~1Parameter~1GET_ARAC_YAKIT_TIP/get/operationId'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_TARZ/get/operationId'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_SEKLI/get/operationId'
+    - '#/paths/~1Query~1GET_KIMLIK_SORGU/post/operationId'
+    - '#/paths/~1Query~1GET_TRAMER_SORGU/post/operationId'
+    - '#/paths/~1Query~1GET_EGM_SORGU/post/operationId'
+    - '#/paths/~1SmartMessage~1PermissionHistory/get/operationId'
+    - '#/paths/~1Token~1GetToken/post/operationId'
+    - '#/paths/~1Token~1RefreshToken/post/operationId'
+    - '#/paths/~1Token~1ValidateToken/post/operationId'
+  operation-summary:
+    - '#/paths/~1Auth~1GetToken/post/summary'
+    - '#/paths/~1Auth~1RefreshToken/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_URUN/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_PROPOSAL/post/summary'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_GUID/post/summary'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_URUN/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRATIONS/post/summary'
+    - '#/paths/~1ExternalProduction~1CHECK_INSURED_COMPANY/post/summary'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_MAIN_INFO/post/summary'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION/post/summary'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION_ANSWER/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_OLD_POLICE/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_POLICY_DOCUMENT/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_MUSTERI/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_TEMINAT/post/summary'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_SORU/post/summary'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE/post/summary
+    - '#/paths/~1ExternalProduction~1GET_TEKLIFLER_PDF/post/summary'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID/post/summary
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT/post/summary'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL/post/summary'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL_FROM_IVR/post/summary'
+    - >-
+      #/paths/~1ExternalProduction~1POLICY_APPROVAL_AFTER_SECURE_PAYMENT/post/summary
+    - '#/paths/~1ExternalProduction~1GET_PAYMENT_DOCUMENT/post/summary'
+    - >-
+      #/paths/~1ExternalProduction~1GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE/post/summary
+    - '#/paths/~1ExternalProduction~1GET_CUSTOMER_INFO_BY_PHONE/get/summary'
+    - '#/paths/~1IYS~1IYSBildirim/post/summary'
+    - '#/paths/~1IYS~1IYSSorgulama/post/summary'
+    - '#/paths/~1IYS~1IYSDegisiklikler/get/summary'
+    - '#/paths/~1Parameter~1GET_IL/get/summary'
+    - '#/paths/~1Parameter~1GET_ILCE/post/summary'
+    - '#/paths/~1Parameter~1GET_MARKA/post/summary'
+    - '#/paths/~1Parameter~1GET_MARKA_MODEL/post/summary'
+    - '#/paths/~1Parameter~1GET_KULLANIM_TIP/get/summary'
+    - '#/paths/~1Parameter~1GET_KULLANIM_SEKLI/post/summary'
+    - '#/paths/~1Parameter~1GET_ARAC_YAKIT_TIP/get/summary'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_TARZ/get/summary'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_SEKLI/get/summary'
+    - '#/paths/~1Query~1GET_KIMLIK_SORGU/post/summary'
+    - '#/paths/~1Query~1GET_TRAMER_SORGU/post/summary'
+    - '#/paths/~1Query~1GET_EGM_SORGU/post/summary'
+    - '#/paths/~1SmartMessage~1PermissionHistory/get/summary'
+    - '#/paths/~1Token~1GetToken/post/summary'
+    - '#/paths/~1Token~1RefreshToken/post/summary'
+    - '#/paths/~1Token~1ValidateToken/post/summary'
+  operation-4xx-response:
+    - '#/paths/~1Auth~1GetToken/post/responses'
+    - '#/paths/~1Auth~1RefreshToken/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_URUN/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_PROPOSAL/post/responses'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_GUID/post/responses'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_URUN/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRATIONS/post/responses'
+    - '#/paths/~1ExternalProduction~1CHECK_INSURED_COMPANY/post/responses'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_MAIN_INFO/post/responses'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION/post/responses'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION_ANSWER/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_OLD_POLICE/post/responses'
+    - '#/paths/~1ExternalProduction~1GET_POLICY_DOCUMENT/post/responses'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_MUSTERI/post/responses
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_TEMINAT/post/responses
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_SORU/post/responses'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE/post/responses
+    - '#/paths/~1ExternalProduction~1GET_TEKLIFLER_PDF/post/responses'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID/post/responses
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT/post/responses'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL/post/responses'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL_FROM_IVR/post/responses'
+    - >-
+      #/paths/~1ExternalProduction~1POLICY_APPROVAL_AFTER_SECURE_PAYMENT/post/responses
+    - '#/paths/~1ExternalProduction~1GET_PAYMENT_DOCUMENT/post/responses'
+    - >-
+      #/paths/~1ExternalProduction~1GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE/post/responses
+    - '#/paths/~1ExternalProduction~1GET_CUSTOMER_INFO_BY_PHONE/get/responses'
+    - '#/paths/~1IYS~1IYSBildirim/post/responses'
+    - '#/paths/~1IYS~1IYSSorgulama/post/responses'
+    - '#/paths/~1IYS~1IYSDegisiklikler/get/responses'
+    - '#/paths/~1Parameter~1GET_IL/get/responses'
+    - '#/paths/~1Parameter~1GET_ILCE/post/responses'
+    - '#/paths/~1Parameter~1GET_MARKA/post/responses'
+    - '#/paths/~1Parameter~1GET_MARKA_MODEL/post/responses'
+    - '#/paths/~1Parameter~1GET_KULLANIM_TIP/get/responses'
+    - '#/paths/~1Parameter~1GET_KULLANIM_SEKLI/post/responses'
+    - '#/paths/~1Parameter~1GET_ARAC_YAKIT_TIP/get/responses'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_TARZ/get/responses'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_SEKLI/get/responses'
+    - '#/paths/~1Query~1GET_KIMLIK_SORGU/post/responses'
+    - '#/paths/~1Query~1GET_TRAMER_SORGU/post/responses'
+    - '#/paths/~1Query~1GET_EGM_SORGU/post/responses'
+    - '#/paths/~1SmartMessage~1PermissionHistory/get/responses'
+    - '#/paths/~1Token~1GetToken/post/responses'
+    - '#/paths/~1Token~1RefreshToken/post/responses'
+    - '#/paths/~1Token~1ValidateToken/post/responses'
+  security-defined:
+    - '#/paths/~1Auth~1GetToken/post'
+    - '#/paths/~1Auth~1RefreshToken/post'
+    - '#/paths/~1ExternalProduction~1GET_URUN/post'
+    - '#/paths/~1ExternalProduction~1GET_PROPOSAL/post'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_GUID/post'
+    - '#/paths/~1ExternalProduction~1SET_TEKLIF_URUN/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRATIONS/post'
+    - '#/paths/~1ExternalProduction~1CHECK_INSURED_COMPANY/post'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_MAIN_INFO/post'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION/post'
+    - '#/paths/~1ExternalProduction~1POST_POLICY_QUESTION_ANSWER/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_OLD_POLICE/post'
+    - '#/paths/~1ExternalProduction~1GET_POLICY_DOCUMENT/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_MUSTERI/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_TEMINAT/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_SORU/post'
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE/post'
+    - '#/paths/~1ExternalProduction~1GET_TEKLIFLER_PDF/post'
+    - >-
+      #/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID/post
+    - '#/paths/~1ExternalProduction~1GET_ENTEGRASYON_URUN_TAKSIT/post'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL/post'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL_FROM_IVR/post'
+    - '#/paths/~1ExternalProduction~1POLICY_APPROVAL_AFTER_SECURE_PAYMENT/post'
+    - '#/paths/~1ExternalProduction~1GET_PAYMENT_DOCUMENT/post'
+    - '#/paths/~1ExternalProduction~1GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE/post'
+    - '#/paths/~1ExternalProduction~1GET_CUSTOMER_INFO_BY_PHONE/get'
+    - '#/paths/~1IYS~1IYSBildirim/post'
+    - '#/paths/~1IYS~1IYSSorgulama/post'
+    - '#/paths/~1IYS~1IYSDegisiklikler/get'
+    - '#/paths/~1Parameter~1GET_IL/get'
+    - '#/paths/~1Parameter~1GET_ILCE/post'
+    - '#/paths/~1Parameter~1GET_MARKA/post'
+    - '#/paths/~1Parameter~1GET_MARKA_MODEL/post'
+    - '#/paths/~1Parameter~1GET_KULLANIM_TIP/get'
+    - '#/paths/~1Parameter~1GET_KULLANIM_SEKLI/post'
+    - '#/paths/~1Parameter~1GET_ARAC_YAKIT_TIP/get'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_TARZ/get'
+    - '#/paths/~1Parameter~1GET_SBM_KULLANIM_SEKLI/get'
+    - '#/paths/~1Query~1GET_KIMLIK_SORGU/post'
+    - '#/paths/~1Query~1GET_TRAMER_SORGU/post'
+    - '#/paths/~1Query~1GET_EGM_SORGU/post'
+    - '#/paths/~1SmartMessage~1PermissionHistory/get'
+    - '#/paths/~1Token~1GetToken/post'
+    - '#/paths/~1Token~1RefreshToken/post'
+    - '#/paths/~1Token~1ValidateToken/post'

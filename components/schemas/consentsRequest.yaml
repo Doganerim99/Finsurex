@@ -1,0 +1,21 @@
+type: object
+properties:
+  consentDate:
+    type: string
+    nullable: true
+  source:
+    type: string
+    nullable: true
+  recipient:
+    type: string
+    nullable: true
+  recipientType:
+    type: string
+    nullable: true
+  status:
+    type: string
+    nullable: true
+  type:
+    type: string
+    nullable: true
+additionalProperties: false

@@ -1,0 +1,288 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  ENTEGRASYON_POLICE_ID:
+    type: number
+    format: double
+    nullable: true
+  SON_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  POLICE_ID:
+    type: number
+    format: double
+    nullable: true
+  POLICE_GUID:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  ONLINE:
+    type: string
+    nullable: true
+  ESKI_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  TAHSILAT_TIP_ID:
+    type: number
+    format: double
+    nullable: true
+  SECIM:
+    type: number
+    format: double
+    nullable: true
+  IS_ATAMA_ID:
+    type: number
+    format: double
+    nullable: true
+  URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  URUN_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_AD:
+    type: string
+    nullable: true
+  URUN_AD:
+    type: string
+    nullable: true
+  SIRKET_URUN_KOD:
+    type: string
+    nullable: true
+  SGR_SIRKET_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SGR_SIRKET_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  SGR_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SGR_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  SGE_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  SGE_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  MT_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  MT_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  TP_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  TP_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_LOG_ID:
+    type: number
+    format: double
+    nullable: true
+  REVIZE_NO:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_ZEYL_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_YENILEME_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_DURUM_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_DURUM_AD:
+    type: string
+    nullable: true
+  ACENTE_NO:
+    type: string
+    nullable: true
+  TALI_ACENTE_NO:
+    type: string
+    nullable: true
+  ZEYL_KOD:
+    type: string
+    nullable: true
+  ZEYL_AD:
+    type: string
+    nullable: true
+  T_I:
+    type: string
+    nullable: true
+  SIRKET_SON_DURUM:
+    type: string
+    nullable: true
+  MT:
+    type: string
+    nullable: true
+  TOPLAM_PRIM:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_PRIM_TL:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_NET_PRIM:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_NET_PRIM_TL:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_VERGI:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_VERGI_TL:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_KOMISYON:
+    type: number
+    format: double
+    nullable: true
+  TOPLAM_KOMISYON_TL:
+    type: number
+    format: double
+    nullable: true
+  DOVIZ_ID:
+    type: number
+    format: double
+    nullable: true
+  DOVIZ_KUR:
+    type: number
+    format: double
+    nullable: true
+  DOVIZ_KOD:
+    type: string
+    nullable: true
+  DOVIZ_AD:
+    type: string
+    nullable: true
+  DURUM_ACIKLAMA:
+    type: string
+    nullable: true
+  POLICE_PARTAJ_GUID:
+    type: string
+    nullable: true
+  TAKSIT:
+    type: number
+    format: double
+    nullable: true
+  BASLAMA_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  BITIS_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  TANZIM_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  ESKI_SGR_SIRKET_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  ESKI_SGR_SIRKET_MUSTERI_ROL_AD:
+    type: string
+    nullable: true
+  ESKI_POLICE_NO:
+    type: string
+    nullable: true
+  POLICE_IS_TIP:
+    type: string
+    nullable: true
+  SECURE_PAYMENT_REF_NO:
+    type: string
+    nullable: true
+  PLCBRT_ISLEM_REFERANS_ID:
+    type: number
+    format: double
+    nullable: true
+  PLCKOM_ISLEM_REFERANS_ID:
+    type: number
+    format: double
+    nullable: true
+  ALT_GRUP_KOD:
+    type: string
+    nullable: true
+  ALT_GRUP_AD:
+    type: string
+    nullable: true
+  TEKLIF_GECERLILIK_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  TEKLIF_GECERLILIK_SURE:
+    type: number
+    format: double
+    nullable: true
+  HATA_GRUP:
+    type: string
+    nullable: true
+additionalProperties: false

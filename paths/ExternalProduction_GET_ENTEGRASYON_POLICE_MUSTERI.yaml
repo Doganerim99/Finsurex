@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_POLICE_MUSTERI.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_POLICE_MUSTERI.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_POLICE_MUSTERI.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_POLICE_MUSTERI.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_POLICE_MUSTERI.yaml
+  responses:
+    '200':
+      description: Success

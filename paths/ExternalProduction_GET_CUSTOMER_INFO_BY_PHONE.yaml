@@ -1,0 +1,11 @@
+get:
+  tags:
+    - ExternalProduction
+  parameters:
+    - name: phoneNumber
+      in: query
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success

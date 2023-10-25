@@ -1,0 +1,74 @@
+type: object
+properties:
+  ENTEGRASYON_POLICE_TEMINAT_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  DEGER_KOD:
+    type: string
+    nullable: true
+  TEMINAT_KOD:
+    type: string
+    nullable: true
+  TEMINAT_ACIKLAMA:
+    type: string
+    nullable: true
+  TEMINAT_BEDEL:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_BEDEL_TL:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_PRIM:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_PRIM_TL:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_FIYAT:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_KOMISYON:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_KOMISYON_TL:
+    type: number
+    format: double
+    nullable: true
+  TEMINAT_BASLAMA_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  TEMINAT_BITIS_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  TEMINAT_LIMIT_ACIKLAMA:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+additionalProperties: false

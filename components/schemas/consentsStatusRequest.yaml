@@ -1,0 +1,12 @@
+type: object
+properties:
+  recipient:
+    type: string
+    nullable: true
+  recipientType:
+    type: string
+    nullable: true
+  type:
+    type: string
+    nullable: true
+additionalProperties: false

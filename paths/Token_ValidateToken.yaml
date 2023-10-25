@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Token
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\TokenModel.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\TokenModel.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\TokenModel.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\TokenModel.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\TokenModel.yaml
+  responses:
+    '200':
+      description: Success

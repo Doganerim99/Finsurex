@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_TEKLIF_PDF_PARAM.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_TEKLIF_PDF_PARAM.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_TEKLIF_PDF_PARAM.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_TEKLIF_PDF_PARAM.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_TEKLIF_PDF_PARAM.yaml
+  responses:
+    '200':
+      description: Success

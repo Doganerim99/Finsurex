@@ -1,0 +1,51 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  ENTEGRASYON_URUN_TAKSIT_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_TAKSIT_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_TAKSIT_AD:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_URUN_AD:
+    type: string
+    nullable: true
+additionalProperties: false

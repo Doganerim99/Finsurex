@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_PROPOSAL.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_PROPOSAL.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_PROPOSAL.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_PROPOSAL.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_PROPOSAL.yaml
+  responses:
+    '200':
+      description: Success

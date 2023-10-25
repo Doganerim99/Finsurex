@@ -1,0 +1,27 @@
+type: object
+properties:
+  TC_KIMLIK_NO:
+    type: string
+    nullable: true
+  DOGUM_TARIH:
+    type: string
+    nullable: true
+  VERGI_NO:
+    type: string
+    nullable: true
+  AD_SOYAD_UNVAN:
+    type: string
+    nullable: true
+  CEP_TEL:
+    type: string
+    nullable: true
+  EMAIL:
+    type: string
+    nullable: true
+  ADRES_IL_KOD:
+    type: string
+    nullable: true
+  ADRES_ILCE_KOD:
+    type: string
+    nullable: true
+additionalProperties: false

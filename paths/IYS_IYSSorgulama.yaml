@@ -1,0 +1,23 @@
+post:
+  tags:
+    - IYS
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\consentsStatusRequest.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\consentsStatusRequest.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\consentsStatusRequest.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\consentsStatusRequest.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\consentsStatusRequest.yaml
+  responses:
+    '200':
+      description: Success

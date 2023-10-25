@@ -1,981 +1,980 @@
----
 openapi: 3.0.1
 info:
   title: BrokerExp.Web.API.External
   version: v1
 servers:
-- url: "/Acentex.WebApi.External.Live"
+  - url: /Acentex.WebApi.External.Live
 paths:
-  "/Auth/GetToken":
+  /Auth/GetToken:
     post:
       tags:
-      - Auth
+        - Auth
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
       responses:
         '200':
           description: Success
-  "/Auth/RefreshToken":
+  /Auth/RefreshToken:
     post:
       tags:
-      - Auth
+        - Auth
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_URUN":
+  /ExternalProduction/GET_URUN:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_URUN"
+              $ref: '#/components/schemas/TYX_URUN'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_URUN"
+              $ref: '#/components/schemas/TYX_URUN'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_URUN"
+              $ref: '#/components/schemas/TYX_URUN'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_URUN"
+              $ref: '#/components/schemas/TYX_URUN'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_URUN"
+              $ref: '#/components/schemas/TYX_URUN'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_PROPOSAL":
+  /ExternalProduction/GET_PROPOSAL:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_PROPOSAL"
+              $ref: '#/components/schemas/M_PROPOSAL'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_PROPOSAL"
+              $ref: '#/components/schemas/M_PROPOSAL'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_PROPOSAL"
+              $ref: '#/components/schemas/M_PROPOSAL'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_PROPOSAL"
+              $ref: '#/components/schemas/M_PROPOSAL'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_PROPOSAL"
+              $ref: '#/components/schemas/M_PROPOSAL'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/SET_TEKLIF_GUID":
+  /ExternalProduction/SET_TEKLIF_GUID:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/SET_TEKLIF_URUN":
+  /ExternalProduction/SET_TEKLIF_URUN:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRATIONS":
+  /ExternalProduction/GET_ENTEGRATIONS:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/CHECK_INSURED_COMPANY":
+  /ExternalProduction/CHECK_INSURED_COMPANY:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POST_POLICY_MAIN_INFO":
+  /ExternalProduction/POST_POLICY_MAIN_INFO:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POST_POLICY_QUESTION":
+  /ExternalProduction/POST_POLICY_QUESTION:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POST_POLICY_QUESTION_ANSWER":
+  /ExternalProduction/POST_POLICY_QUESTION_ANSWER:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE"
+              $ref: '#/components/schemas/M_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_POLICE":
+  /ExternalProduction/GET_ENTEGRASYON_POLICE:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_OLD_POLICE":
+  /ExternalProduction/GET_ENTEGRASYON_OLD_POLICE:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_POLICY_DOCUMENT":
+  /ExternalProduction/GET_POLICY_DOCUMENT:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_POLICE_MUSTERI":
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_MUSTERI:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE_MUSTERI'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_POLICE_TEMINAT":
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_TEMINAT:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_TEMINAT'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_POLICE_SORU":
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_SORU:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_SORU'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE":
+  /ExternalProduction/GET_ENTEGRASYON_POLICE_BY_ENTEG_POLICE:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+              $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_TEKLIFLER_PDF":
+  /ExternalProduction/GET_TEKLIFLER_PDF:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              $ref: '#/components/schemas/M_TEKLIF_PDF_PARAM'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              $ref: '#/components/schemas/M_TEKLIF_PDF_PARAM'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              $ref: '#/components/schemas/M_TEKLIF_PDF_PARAM'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              $ref: '#/components/schemas/M_TEKLIF_PDF_PARAM'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_TEKLIF_PDF_PARAM"
+              $ref: '#/components/schemas/M_TEKLIF_PDF_PARAM'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID":
+  /ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT_BY_ENTEGRASYON_URUN_ID:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT":
+  /ExternalProduction/GET_ENTEGRASYON_URUN_TAKSIT:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT"
+              $ref: '#/components/schemas/M_ENTEGRASYON_URUN_TAKSIT'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POLICY_APPROVAL":
+  /ExternalProduction/POLICY_APPROVAL:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY"
+              $ref: '#/components/schemas/M_POLICE_ONAY'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY"
+              $ref: '#/components/schemas/M_POLICE_ONAY'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY"
+              $ref: '#/components/schemas/M_POLICE_ONAY'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY"
+              $ref: '#/components/schemas/M_POLICE_ONAY'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY"
+              $ref: '#/components/schemas/M_POLICE_ONAY'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POLICY_APPROVAL_FROM_IVR":
+  /ExternalProduction/POLICY_APPROVAL_FROM_IVR:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              $ref: '#/components/schemas/M_POLICE_ONAY_IVR'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              $ref: '#/components/schemas/M_POLICE_ONAY_IVR'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              $ref: '#/components/schemas/M_POLICE_ONAY_IVR'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              $ref: '#/components/schemas/M_POLICE_ONAY_IVR'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_ONAY_IVR"
+              $ref: '#/components/schemas/M_POLICE_ONAY_IVR'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/POLICY_APPROVAL_AFTER_SECURE_PAYMENT":
+  /ExternalProduction/POLICY_APPROVAL_AFTER_SECURE_PAYMENT:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET"
+              $ref: '#/components/schemas/TYX_ENTEGRASYON_POLICE_HAREKET'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_PAYMENT_DOCUMENT":
+  /ExternalProduction/GET_PAYMENT_DOCUMENT:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_POLICE_BASIM_PARAM"
+              $ref: '#/components/schemas/M_POLICE_BASIM_PARAM'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE":
+  /ExternalProduction/GET_PROPOSAL_FROM_KIMLIK_PLAKA_BELGE:
     post:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              $ref: '#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              $ref: '#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              $ref: '#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              $ref: '#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU"
+              $ref: '#/components/schemas/M_KIMLIK_PLAKA_ARAC_SORGU'
       responses:
         '200':
           description: Success
-  "/ExternalProduction/GET_CUSTOMER_INFO_BY_PHONE":
+  /ExternalProduction/GET_CUSTOMER_INFO_BY_PHONE:
     get:
       tags:
-      - ExternalProduction
+        - ExternalProduction
       parameters:
-      - name: phoneNumber
-        in: query
-        schema:
-          type: string
+        - name: phoneNumber
+          in: query
+          schema:
+            type: string
       responses:
         '200':
           description: Success
-  "/IYS/IYSBildirim":
+  /IYS/IYSBildirim:
     post:
       tags:
-      - IYS
+        - IYS
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/consentsRequest"
+              $ref: '#/components/schemas/consentsRequest'
           text/html:
             schema:
-              "$ref": "#/components/schemas/consentsRequest"
+              $ref: '#/components/schemas/consentsRequest'
           application/json:
             schema:
-              "$ref": "#/components/schemas/consentsRequest"
+              $ref: '#/components/schemas/consentsRequest'
           text/json:
             schema:
-              "$ref": "#/components/schemas/consentsRequest"
+              $ref: '#/components/schemas/consentsRequest'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/consentsRequest"
+              $ref: '#/components/schemas/consentsRequest'
       responses:
         '200':
           description: Success
-  "/IYS/IYSSorgulama":
+  /IYS/IYSSorgulama:
     post:
       tags:
-      - IYS
+        - IYS
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/consentsStatusRequest"
+              $ref: '#/components/schemas/consentsStatusRequest'
           text/html:
             schema:
-              "$ref": "#/components/schemas/consentsStatusRequest"
+              $ref: '#/components/schemas/consentsStatusRequest'
           application/json:
             schema:
-              "$ref": "#/components/schemas/consentsStatusRequest"
+              $ref: '#/components/schemas/consentsStatusRequest'
           text/json:
             schema:
-              "$ref": "#/components/schemas/consentsStatusRequest"
+              $ref: '#/components/schemas/consentsStatusRequest'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/consentsStatusRequest"
+              $ref: '#/components/schemas/consentsStatusRequest'
       responses:
         '200':
           description: Success
-  "/IYS/IYSDegisiklikler":
+  /IYS/IYSDegisiklikler:
     get:
       tags:
-      - IYS
+        - IYS
       responses:
         '200':
           description: Success
-  "/Parameter/GET_IL":
+  /Parameter/GET_IL:
     get:
       tags:
-      - Parameter
+        - Parameter
       responses:
         '200':
           description: Success
-  "/Parameter/GET_ILCE":
+  /Parameter/GET_ILCE:
     post:
       tags:
-      - Parameter
+        - Parameter
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ADRES_IL"
+              $ref: '#/components/schemas/TYX_ADRES_IL'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_ADRES_IL"
+              $ref: '#/components/schemas/TYX_ADRES_IL'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ADRES_IL"
+              $ref: '#/components/schemas/TYX_ADRES_IL'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_ADRES_IL"
+              $ref: '#/components/schemas/TYX_ADRES_IL'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_ADRES_IL"
+              $ref: '#/components/schemas/TYX_ADRES_IL'
       responses:
         '200':
           description: Success
-  "/Parameter/GET_MARKA":
+  /Parameter/GET_MARKA:
     post:
       tags:
-      - Parameter
+        - Parameter
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
       responses:
         '200':
           description: Success
-  "/Parameter/GET_MARKA_MODEL":
+  /Parameter/GET_MARKA_MODEL:
     post:
       tags:
-      - Parameter
+        - Parameter
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           text/html:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           application/json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           text/json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/M_ARAC_BILGI"
+              $ref: '#/components/schemas/M_ARAC_BILGI'
       responses:
         '200':
           description: Success
-  "/Parameter/GET_KULLANIM_TIP":
+  /Parameter/GET_KULLANIM_TIP:
     get:
       tags:
-      - Parameter
+        - Parameter
       responses:
         '200':
           description: Success
-  "/Parameter/GET_KULLANIM_SEKLI":
+  /Parameter/GET_KULLANIM_SEKLI:
     post:
       tags:
-      - Parameter
+        - Parameter
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              $ref: '#/components/schemas/TYX_SORU_DEGER'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              $ref: '#/components/schemas/TYX_SORU_DEGER'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              $ref: '#/components/schemas/TYX_SORU_DEGER'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              $ref: '#/components/schemas/TYX_SORU_DEGER'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TYX_SORU_DEGER"
+              $ref: '#/components/schemas/TYX_SORU_DEGER'
       responses:
         '200':
           description: Success
-  "/Parameter/GET_ARAC_YAKIT_TIP":
+  /Parameter/GET_ARAC_YAKIT_TIP:
     get:
       tags:
-      - Parameter
+        - Parameter
       responses:
         '200':
           description: Success
-  "/Parameter/GET_SBM_KULLANIM_TARZ":
+  /Parameter/GET_SBM_KULLANIM_TARZ:
     get:
       tags:
-      - Parameter
+        - Parameter
       responses:
         '200':
           description: Success
-  "/Parameter/GET_SBM_KULLANIM_SEKLI":
+  /Parameter/GET_SBM_KULLANIM_SEKLI:
     get:
       tags:
-      - Parameter
+        - Parameter
       responses:
         '200':
           description: Success
-  "/Query/GET_KIMLIK_SORGU":
+  /Query/GET_KIMLIK_SORGU:
     post:
       tags:
-      - Query
+        - Query
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST'
           text/html:
             schema:
-              "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST'
           application/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST'
           text/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_KIMLIK_SORGU_REQUEST'
       responses:
         '200':
           description: Success
-  "/Query/GET_TRAMER_SORGU":
+  /Query/GET_TRAMER_SORGU:
     post:
       tags:
-      - Query
+        - Query
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_TRAMER_SORGU_REQUEST'
           text/html:
             schema:
-              "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_TRAMER_SORGU_REQUEST'
           application/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_TRAMER_SORGU_REQUEST'
           text/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_TRAMER_SORGU_REQUEST'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_TRAMER_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_TRAMER_SORGU_REQUEST'
       responses:
         '200':
           description: Success
-  "/Query/GET_EGM_SORGU":
+  /Query/GET_EGM_SORGU:
     post:
       tags:
-      - Query
+        - Query
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_EGM_SORGU_REQUEST'
           text/html:
             schema:
-              "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_EGM_SORGU_REQUEST'
           application/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_EGM_SORGU_REQUEST'
           text/json:
             schema:
-              "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_EGM_SORGU_REQUEST'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/QUERY_EGM_SORGU_REQUEST"
+              $ref: '#/components/schemas/QUERY_EGM_SORGU_REQUEST'
       responses:
         '200':
           description: Success
-  "/SmartMessage/PermissionHistory":
+  /SmartMessage/PermissionHistory:
     get:
       tags:
-      - SmartMessage
+        - SmartMessage
       responses:
         '200':
           description: Success
-  "/Token/GetToken":
+  /Token/GetToken:
     post:
       tags:
-      - Token
+        - Token
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TokenRequestModel"
+              $ref: '#/components/schemas/TokenRequestModel'
       responses:
         '200':
           description: Success
-  "/Token/RefreshToken":
+  /Token/RefreshToken:
     post:
       tags:
-      - Token
+        - Token
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
       responses:
         '200':
           description: Success
-  "/Token/ValidateToken":
+  /Token/ValidateToken:
     post:
       tags:
-      - Token
+        - Token
       requestBody:
         content:
           application/json-patch+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/html:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           text/json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
           application/*+json:
             schema:
-              "$ref": "#/components/schemas/TokenModel"
+              $ref: '#/components/schemas/TokenModel'
       responses:
         '200':
           description: Success
@@ -1749,7 +1748,7 @@ components:
         Items:
           type: array
           items:
-            "$ref": "#/components/schemas/M_EVRAK_HAVUZ"
+            $ref: '#/components/schemas/M_EVRAK_HAVUZ'
           nullable: true
       additionalProperties: false
     M_IS_ATAMA:
@@ -2299,7 +2298,7 @@ components:
           type: string
           nullable: true
         EVRAK_HAVUZ_LIST:
-          "$ref": "#/components/schemas/M_EVRAK_HAVUZ_LIST"
+          $ref: '#/components/schemas/M_EVRAK_HAVUZ_LIST'
       additionalProperties: false
     M_KIMLIK_BILGI:
       type: object
@@ -2467,53 +2466,53 @@ components:
           type: string
           nullable: true
         IS_ATAMA:
-          "$ref": "#/components/schemas/M_IS_ATAMA"
+          $ref: '#/components/schemas/M_IS_ATAMA'
         KIMLIK_BILGI:
-          "$ref": "#/components/schemas/M_KIMLIK_BILGI"
+          $ref: '#/components/schemas/M_KIMLIK_BILGI'
         URUN_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_URUN"
+            $ref: '#/components/schemas/M_URUN'
           nullable: true
         SORU_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_SORU"
+            $ref: '#/components/schemas/M_SORU'
           nullable: true
         URUN_SORU_EVENT_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_URUN_SORU_EVENT"
+            $ref: '#/components/schemas/M_URUN_SORU_EVENT'
           nullable: true
         SORU_MASKE_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_SORU_MASKE"
+            $ref: '#/components/schemas/M_SORU_MASKE'
           nullable: true
         SORU_TABLO_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_URUN_SORU_TABLO"
+            $ref: '#/components/schemas/M_URUN_SORU_TABLO'
           nullable: true
         ENTEGRASYON_POLICE:
           type: array
           items:
-            "$ref": "#/components/schemas/M_ENTEGRASYON_POLICE"
+            $ref: '#/components/schemas/M_ENTEGRASYON_POLICE'
           nullable: true
         ENTEGRASYON_PARTAJ:
           type: array
           items:
-            "$ref": "#/components/schemas/M_ENTEGRASYON_PARTAJ"
+            $ref: '#/components/schemas/M_ENTEGRASYON_PARTAJ'
           nullable: true
         BAGLI_MUSTERI:
           type: array
           items:
-            "$ref": "#/components/schemas/M_BAGLI_MUSTERI"
+            $ref: '#/components/schemas/M_BAGLI_MUSTERI'
           nullable: true
         MASKED_SORU_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_SORU_MASKED"
+            $ref: '#/components/schemas/M_SORU_MASKED'
           nullable: true
         is_mobile:
           type: boolean
@@ -2756,11 +2755,11 @@ components:
       type: object
       properties:
         GENEL_BILGILER:
-          "$ref": "#/components/schemas/M_PROPOSAL_GENEL"
+          $ref: '#/components/schemas/M_PROPOSAL_GENEL'
         MUSTERI_BILGILERI:
-          "$ref": "#/components/schemas/M_PROPOSAL_MUSTERI"
+          $ref: '#/components/schemas/M_PROPOSAL_MUSTERI'
         ARAC_BILGILERI:
-          "$ref": "#/components/schemas/M_PROPOSAL_ARAC"
+          $ref: '#/components/schemas/M_PROPOSAL_ARAC'
       additionalProperties: false
     M_PROPOSAL_ARAC:
       type: object
@@ -2943,7 +2942,7 @@ components:
         SORU_DEGER_LIST:
           type: array
           items:
-            "$ref": "#/components/schemas/M_SORU_DEGER"
+            $ref: '#/components/schemas/M_SORU_DEGER'
           nullable: true
       additionalProperties: false
     M_SORU_DEGER:

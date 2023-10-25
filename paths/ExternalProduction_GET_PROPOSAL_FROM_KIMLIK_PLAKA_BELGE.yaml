@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_KIMLIK_PLAKA_ARAC_SORGU.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_KIMLIK_PLAKA_ARAC_SORGU.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_KIMLIK_PLAKA_ARAC_SORGU.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_KIMLIK_PLAKA_ARAC_SORGU.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_KIMLIK_PLAKA_ARAC_SORGU.yaml
+  responses:
+    '200':
+      description: Success

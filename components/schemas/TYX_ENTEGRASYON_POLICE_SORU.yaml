@@ -1,0 +1,38 @@
+type: object
+properties:
+  ENTEGRASYON_POLICE_SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  SORU_ID:
+    type: number
+    format: double
+    nullable: true
+  DEGER_KOD:
+    type: string
+    nullable: true
+  SIRKET_SORU_KOD:
+    type: string
+    nullable: true
+  SIRKET_SORU_ACIKLAMA:
+    type: string
+    nullable: true
+  SIRKET_SORU_DEGER:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+additionalProperties: false

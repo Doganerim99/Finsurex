@@ -1,0 +1,87 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  POLICE_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_ID:
+    type: number
+    format: double
+    nullable: true
+  ENTEGRASYON_URUN_KOD:
+    type: string
+    nullable: true
+  POLICE_GUID:
+    type: string
+    nullable: true
+  ACENTE_NO:
+    type: string
+    nullable: true
+  MT:
+    type: string
+    nullable: true
+  SIRKET_URUN_KOD:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_ZEYL_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_YENILEME_NO:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_DURUM_KOD:
+    type: string
+    nullable: true
+  REQUEST_XML:
+    type: string
+    nullable: true
+  RESPONSE_XML:
+    type: string
+    nullable: true
+  SAVE_EVRAK_HAVUZ:
+    type: boolean
+  AKTARIM_POLICE_KOD:
+    type: string
+    nullable: true
+  TEKLIF_ONAY_RESPONSE_XML:
+    type: string
+    nullable: true
+  TEKLIF_HESAP_REQUEST_XML:
+    type: string
+    nullable: true
+additionalProperties: false

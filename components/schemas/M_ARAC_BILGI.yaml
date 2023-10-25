@@ -1,0 +1,122 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MARKA_KOD:
+    type: string
+    nullable: true
+  MARKA_AD:
+    type: string
+    nullable: true
+  MARKA_TIP_KOD:
+    type: string
+    nullable: true
+  MARKA_TIP_AD:
+    type: string
+    nullable: true
+  MODEL_YIL:
+    type: string
+    nullable: true
+  PLAKA_IL_KOD:
+    type: string
+    nullable: true
+  PLAKA_NO:
+    type: string
+    nullable: true
+  FULL_PLAKA_NO:
+    type: string
+    nullable: true
+  SASI_NO:
+    type: string
+    nullable: true
+  MOTOR_NO:
+    type: string
+    nullable: true
+  RENK:
+    type: string
+    nullable: true
+  YOLCU_YER_ADET:
+    type: string
+    nullable: true
+  MOTOR_GUCU:
+    type: string
+    nullable: true
+  SILINDIR_HACMI:
+    type: string
+    nullable: true
+  KULLANIM_SEKLI_KOD:
+    type: string
+    nullable: true
+  KULLANIM_SEKLI_AD:
+    type: string
+    nullable: true
+  KULLANIM_TARZI_KOD:
+    type: string
+    nullable: true
+  KULLANIM_TARZI_AD:
+    type: string
+    nullable: true
+  TESCIL_BELGE_NO:
+    type: string
+    nullable: true
+  TESCIL_TARIH:
+    type: string
+    nullable: true
+  TRAFIGE_CIKIS_TARIH:
+    type: string
+    nullable: true
+  KASKO_ESKI_SIGORTA_SIRKET_KOD:
+    type: string
+    nullable: true
+  KASKO_ESKI_POLICE_NO:
+    type: string
+    nullable: true
+  KASKO_ESKI_ACENTE_NO:
+    type: string
+    nullable: true
+  KASKO_ESKI_YENILEME_NO:
+    type: string
+    nullable: true
+  KASKO_ESKI_POLICE_BASLAMA_TARIH:
+    type: string
+    nullable: true
+  KASKO_ESKI_POLICE_BITIS_TARIH:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_SIGORTA_SIRKET_KOD:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_POLICE_NO:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_ACENTE_NO:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_YENILEME_NO:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_POLICE_BASLAMA_TARIH:
+    type: string
+    nullable: true
+  TRAFIK_ESKI_POLICE_BITIS_TARIH:
+    type: string
+    nullable: true
+  KAYNAK:
+    type: string
+    nullable: true
+additionalProperties: false

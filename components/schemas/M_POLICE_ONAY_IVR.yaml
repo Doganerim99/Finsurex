@@ -1,0 +1,22 @@
+type: object
+properties:
+  ENTEGRASYON_POLICE_HAREKET_ID:
+    type: number
+    format: double
+    nullable: true
+  KREDI_KART_AD_SOYAD:
+    type: string
+    nullable: true
+  KREDI_KART_NO:
+    type: string
+    nullable: true
+  KREDI_KART_SON_KULLANIM_TARIH:
+    type: string
+    nullable: true
+  KREDI_KART_GUVENLIK_KOD:
+    type: string
+    nullable: true
+  IVR_CAGRI_KEY:
+    type: string
+    nullable: true
+additionalProperties: false

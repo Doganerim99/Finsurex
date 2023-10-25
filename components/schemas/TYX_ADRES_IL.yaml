@@ -1,0 +1,28 @@
+type: object
+properties:
+  IL_ID:
+    type: number
+    format: double
+    nullable: true
+  ULKE_ID:
+    type: number
+    format: double
+    nullable: true
+  IL_KOD:
+    type: string
+    nullable: true
+  IL_AD:
+    type: string
+    nullable: true
+  GUNCELLEYEN:
+    type: string
+    nullable: true
+  GUNCELLEME_TARIH:
+    type: string
+    format: date-time
+    nullable: true
+  GUNCELLEME_TARIH_NUM:
+    type: number
+    format: double
+    nullable: true
+additionalProperties: false

@@ -1,0 +1,12 @@
+type: object
+properties:
+  KIMLIK_TIP:
+    type: string
+    nullable: true
+  KIMLIK_NO:
+    type: string
+    nullable: true
+  PLAKA_NO:
+    type: string
+    nullable: true
+additionalProperties: false

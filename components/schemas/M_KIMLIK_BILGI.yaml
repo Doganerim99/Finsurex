@@ -1,0 +1,90 @@
+type: object
+properties:
+  Success:
+    type: boolean
+  ErrorList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  WarningList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  MessageList:
+    type: array
+    items:
+      type: string
+    nullable: true
+  TC_KIMLIK_NO:
+    type: string
+    nullable: true
+  VERGI_KIMLIK_NO:
+    type: string
+    nullable: true
+  AD:
+    type: string
+    nullable: true
+  SOYAD:
+    type: string
+    nullable: true
+  UNVAN:
+    type: string
+    nullable: true
+  AD_SOYAD_UNVAN:
+    type: string
+    nullable: true
+  BABA_AD:
+    type: string
+    nullable: true
+  CINSIYET:
+    type: string
+    nullable: true
+  DOGUM_TARIHI:
+    type: string
+    nullable: true
+  DOGUM_YERI:
+    type: string
+    nullable: true
+  DASK_UAVT_ADRES_NO:
+    type: string
+    nullable: true
+  IL_KOD:
+    type: string
+    nullable: true
+  IL_AD:
+    type: string
+    nullable: true
+  ILCE_KOD:
+    type: string
+    nullable: true
+  MAHALLE_KOD:
+    type: string
+    nullable: true
+  ILCE_AD:
+    type: string
+    nullable: true
+  CEP_TEL:
+    type: string
+    nullable: true
+  SABIT_TEL:
+    type: string
+    nullable: true
+  EMAIL:
+    type: string
+    nullable: true
+  ADRES:
+    type: string
+    nullable: true
+  SIGORTALI_MUSTERI_ROL_ID:
+    type: number
+    format: double
+    nullable: true
+  MUSTERI_KARTON_KAYDET:
+    type: boolean
+  MUSTERI_STATU_TANIM_ID:
+    type: number
+    format: double
+    nullable: true
+additionalProperties: false

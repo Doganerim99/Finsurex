@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_URUN_TAKSIT.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_URUN_TAKSIT.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_URUN_TAKSIT.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_URUN_TAKSIT.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_ENTEGRASYON_URUN_TAKSIT.yaml
+  responses:
+    '200':
+      description: Success

@@ -1,0 +1,23 @@
+post:
+  tags:
+    - ExternalProduction
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\TYX_ENTEGRASYON_POLICE_TEMINAT.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\TYX_ENTEGRASYON_POLICE_TEMINAT.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\TYX_ENTEGRASYON_POLICE_TEMINAT.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\TYX_ENTEGRASYON_POLICE_TEMINAT.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\TYX_ENTEGRASYON_POLICE_TEMINAT.yaml
+  responses:
+    '200':
+      description: Success

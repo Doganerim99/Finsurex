@@ -1,0 +1,9 @@
+type: object
+properties:
+  GENEL_BILGILER:
+    $ref: .\M_PROPOSAL_GENEL.yaml
+  MUSTERI_BILGILERI:
+    $ref: .\M_PROPOSAL_MUSTERI.yaml
+  ARAC_BILGILERI:
+    $ref: .\M_PROPOSAL_ARAC.yaml
+additionalProperties: false

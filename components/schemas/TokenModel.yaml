@@ -1,0 +1,25 @@
+type: object
+properties:
+  sessionGuid:
+    type: string
+    nullable: true
+  accessToken:
+    type: string
+    nullable: true
+  expiration:
+    type: string
+    format: date-time
+  expirationTimeStamp:
+    type: number
+    format: double
+    nullable: true
+  refreshToken:
+    type: string
+    nullable: true
+  ErrorMessage:
+    type: string
+    nullable: true
+  Scheme:
+    type: string
+    nullable: true
+additionalProperties: false

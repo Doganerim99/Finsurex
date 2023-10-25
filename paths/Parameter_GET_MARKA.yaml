@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Parameter
+  requestBody:
+    content:
+      application/json-patch+json:
+        schema:
+          $ref: ..\components\schemas\M_ARAC_BILGI.yaml
+      text/html:
+        schema:
+          $ref: ..\components\schemas\M_ARAC_BILGI.yaml
+      application/json:
+        schema:
+          $ref: ..\components\schemas\M_ARAC_BILGI.yaml
+      text/json:
+        schema:
+          $ref: ..\components\schemas\M_ARAC_BILGI.yaml
+      application/*+json:
+        schema:
+          $ref: ..\components\schemas\M_ARAC_BILGI.yaml
+  responses:
+    '200':
+      description: Success

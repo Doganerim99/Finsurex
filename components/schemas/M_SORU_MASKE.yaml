@@ -1,0 +1,32 @@
+type: object
+properties:
+  MASKE_TIP_ID:
+    type: number
+    format: double
+    nullable: true
+  OPTIONS:
+    type: string
+    nullable: true
+  MASKE_TIP_AD:
+    type: string
+    nullable: true
+  PLACEHOLDER:
+    type: string
+    nullable: true
+  MASKE_EVENT_ID:
+    type: number
+    format: double
+    nullable: true
+  MASKE_EVENT_AD:
+    type: string
+    nullable: true
+  EVENT_NAME:
+    type: string
+    nullable: true
+  PARAMETERS:
+    type: string
+    nullable: true
+  SCRIPT_CODE:
+    type: string
+    nullable: true
+additionalProperties: false

@@ -1,0 +1,18 @@
+type: object
+properties:
+  POLICE_ID:
+    type: number
+    format: double
+  URUN_KOD:
+    type: string
+    nullable: true
+  EMAIL:
+    type: string
+    nullable: true
+  ENTEGRASYON_POLICE_ID_LIST:
+    type: array
+    items:
+      type: number
+      format: double
+    nullable: true
+additionalProperties: false

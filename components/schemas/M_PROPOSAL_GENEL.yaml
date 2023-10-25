@@ -1,0 +1,21 @@
+type: object
+properties:
+  URUN_KOD:
+    type: string
+    nullable: true
+  URUN_AD:
+    type: string
+    nullable: true
+  BASLAMA_TARIH:
+    type: string
+    nullable: true
+  BITIS_TARIH:
+    type: string
+    nullable: true
+  TANZIM_TARIH:
+    type: string
+    nullable: true
+  ODEME_SEKLI:
+    type: string
+    nullable: true
+additionalProperties: false
